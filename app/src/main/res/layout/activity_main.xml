@@ -11,15 +11,15 @@
         android:layout_height="729dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
-            android:text="Welcome to my temperature conversion"
+            android:text="@string/demon_text1"
             android:textSize="20sp"
             android:textColor="@android:color/holo_red_dark"/>
 
@@ -30,7 +30,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:layout_marginBottom="20dp"
-            android:text="Please input centigrade" />
+            android:text="@string/input_text" />
 
         <Button
             android:id="@+id/btn"
@@ -38,21 +38,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
-            android:text="CONVERT" />
+            android:text="@string/click_btn" />
 
         <TextView
-            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="33dp"
             android:gravity="center"
             android:textColor="@android:color/black"
-            android:text="Converted Fahrenheit degree is:" />
+            android:text="@string/demon_text2" />
 
         <TextView
             android:id="@+id/output"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
+            android:text="@string/output_text"
             android:layout_gravity="center"
             android:gravity="center"/>
     </LinearLayout>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MyHomeworkApp</string>
+    <string name="demon_text1">Welcome to my temperature conversion</string>
+    <string name="demon_text2">Converted Fahrenheit degree is:</string>
+    <string name="input_text">Please input degree centigrade</string>
+    <string name="click_btn">CONVERT</string>
+    <string name="output_text"></string>
 </resources>
