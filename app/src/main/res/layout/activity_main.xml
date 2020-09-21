@@ -7,72 +7,178 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="415dp"
+        android:layout_height="728dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-2dp">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:background="#3F51B5"
+            android:layout_height="47dp"
+            android:background="@android:color/holo_orange_dark"
             android:fontFamily="@font/andada"
-            android:gravity="center|left"
+            android:gravity="center"
             android:text="@string/demon_text1"
-            android:textSize="36sp" />
+            android:textSize="30dp" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:text="@string/demon_text2"
-            android:textSize="30sp" />
+            android:layout_height="499dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="2dp">
 
-        <TextView
-            android:id="@+id/score"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:gravity="center"
-            android:text="@string/nowScore"
-            android:textSize="60sp" />
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="430dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="60dp">
 
-        <Button
-            android:id="@+id/btn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp"
-            android:text="@string/Score1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:text="@string/demon_text2"
+                    android:textSize="30sp" />
 
-        <Button
-            android:id="@+id/btn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp"
-            android:text="@string/Score2" />
+                <TextView
+                    android:id="@+id/AScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center"
+                    android:text="@string/nowScoreA"
+                    android:textSize="60sp" />
 
-        <Button
-            android:id="@+id/btn3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/Score3" />
+                <Button
+                    android:id="@+id/ABtn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="@string/AScore1" />
+
+                <Button
+                    android:id="@+id/ABtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="@string/AScore2" />
+
+                <Button
+                    android:id="@+id/ABtn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="@string/AScore3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="424dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="209dp"
+                android:layout_height="429dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="202dp"
+                tools:layout_editor_absoluteY="61dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:text="@string/demon_text3"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/BScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="81dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center"
+                    android:text="@string/nowScoreB"
+                    android:textSize="60sp" />
+
+                <Button
+                    android:id="@+id/BBtn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="@string/BScore1" />
+
+                <Button
+                    android:id="@+id/BBtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="@string/BScore2" />
+
+                <Button
+                    android:id="@+id/BBtn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="@string/BScore3" />
+            </LinearLayout>
+
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/resetBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="120dp"
-            android:text="@string/Reset0" />
+            android:layout_marginBottom="32dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="@string/Reset0"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="652dp" />
+
     </LinearLayout>
+
+
 </android.support.constraint.ConstraintLayout>

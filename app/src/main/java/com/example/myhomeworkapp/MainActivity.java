@@ -9,12 +9,19 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView score;
-    private Button btn1;
-    private Button btn2;
-    private Button btn3;
+    private TextView AScore;
+    private Button ABtn1;
+    private Button ABtn2;
+    private Button ABtn3;
+
+    private TextView BScore;
+    private Button BBtn1;
+    private Button BBtn2;
+    private Button BBtn3;
+
     private Button resetBtn;
-    int nowScore;
+    int nowScoreA;
+    int nowScoreB;
 
 
     @Override
@@ -22,43 +29,76 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        score = (TextView)findViewById(R.id.score);
-        btn1 = (Button)findViewById((R.id.btn1));
-        btn2 = (Button)findViewById((R.id.btn2));
-        btn3 = (Button)findViewById((R.id.btn3));
+        AScore = (TextView)findViewById(R.id.AScore);
+        ABtn1 = (Button)findViewById((R.id.ABtn1));
+        ABtn2 = (Button)findViewById((R.id.ABtn2));
+        ABtn3 = (Button)findViewById((R.id.ABtn3));
+
+        BScore = (TextView)findViewById(R.id.BScore);
+        BBtn1 = (Button)findViewById((R.id.BBtn1));
+        BBtn2 = (Button)findViewById((R.id.BBtn2));
+        BBtn3 = (Button)findViewById((R.id.BBtn3));
+
         resetBtn = (Button)findViewById((R.id.resetBtn));
 
-        nowScore = Integer.parseInt(score.getText().toString());
+        nowScoreA = Integer.parseInt(AScore.getText().toString());
+        nowScoreB = Integer.parseInt(BScore.getText().toString());
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+        ABtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nowScore = nowScore+1;
-                score.setText(String.valueOf(nowScore));
+                nowScoreA = nowScoreA+1;
+                AScore.setText(String.valueOf(nowScoreA));
             }
         });
 
-        btn2.setOnClickListener(new View.OnClickListener() {
+        ABtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nowScore = nowScore+2;
-                score.setText(String.valueOf(nowScore));
+                nowScoreA = nowScoreA+2;
+                AScore.setText(String.valueOf(nowScoreA));
             }
         });
 
-        btn3.setOnClickListener(new View.OnClickListener() {
+        ABtn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nowScore = nowScore+3;
-                score.setText(String.valueOf(nowScore));
+                nowScoreA = nowScoreA+3;
+                AScore.setText(String.valueOf(nowScoreA));
+            }
+        });
+
+        BBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nowScoreB = nowScoreB + 1 ;
+                BScore.setText(String.valueOf(nowScoreB));
+            }
+        });
+
+        BBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nowScoreB = nowScoreB + 2 ;
+                BScore.setText(String.valueOf(nowScoreB));
+            }
+        });
+
+        BBtn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nowScoreB = nowScoreB + 3 ;
+                BScore.setText(String.valueOf(nowScoreB));
             }
         });
 
         resetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nowScore = 0;
-                score.setText(String.valueOf(nowScore));
+                nowScoreA = 0;
+                nowScoreB = 0;
+                AScore.setText(String.valueOf(nowScoreA));
+                BScore.setText(String.valueOf(nowScoreB));
             }
         });
 
