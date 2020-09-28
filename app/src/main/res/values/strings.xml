@@ -1,16 +1,15 @@
 <resources>
     <string name="app_name">MyHomeworkApp</string>
-    <string name="demon_text1">ScoreBoard</string>
-    <string name="demon_text2">Team A</string>
-    <string name="demon_text3">Team B</string>
-    <string name="nowScoreA">0</string>
-    <string name="nowScoreB">0</string>
-    <string name="AScore1">+1 score</string>
-    <string name="AScore2">+2 scores</string>
-    <string name="AScore3">+3 scores</string>
-    <string name="BScore1">+1 score</string>
-    <string name="BScore2">+2 scores</string>
-    <string name="BScore3">+3 scores</string>
-    <string name="Reset0">RESET</string>
-
+    <string name="inputText"> </string>
+    <string name="demon_text">Hello</string>
+    <string name="R2DBtn">DOLLAR</string>
+    <string name="R2EBtn">EURO</string>
+    <string name="R2WBtn">WON</string>
+    <string name="Result"></string>
+    <string name="input_hint">input RMB</string>
+    <string name="R2DErate_input_hint">Input RMB to Dollar Exchange Rate</string>
+    <string name="R2EErate_input_hint">Input RMB to EUR Exchange Rate</string>
+    <string name="R2WErate_input_hint">Input RMB to WON Exchange Rate</string>
+    <string name="SavsBtn">SAVE</string>
+    <string name="config_btn">CONFIG</string>
 </resources>
