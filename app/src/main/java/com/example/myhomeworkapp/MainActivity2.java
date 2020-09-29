@@ -16,7 +16,6 @@ import android.widget.Toast;
 public class MainActivity2 extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences;
-
     private static final String TAG = "MainActivity2";
     private EditText R2D;
     private EditText R2E;

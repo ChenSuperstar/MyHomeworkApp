@@ -12,4 +12,5 @@
     <string name="R2WErate_input_hint">Input RMB to WON Exchange Rate</string>
     <string name="SavsBtn">SAVE</string>
     <string name="config_btn">CONFIG</string>
+    <string name="netBtn">NETWORKTEST</string>
 </resources>
