@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent intent = new Intent(this,LongRunningService.class);
+        startService(intent);
+
         sharedPreferences = getSharedPreferences("rate", Activity.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putFloat("dollar_rate", 0.1f);

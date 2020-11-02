@@ -13,4 +13,8 @@
     <string name="SavsBtn">SAVE</string>
     <string name="config_btn">CONFIG</string>
     <string name="netBtn">NETWORKTEST</string>
+    <string name="agreeBtn">赞成</string>
+    <string name="abstentionBtn">放弃</string>
+    <string name="disagreeBtn">反对</string>
+    <string name="abstentionBtn1">弃权</string>
 </resources>
